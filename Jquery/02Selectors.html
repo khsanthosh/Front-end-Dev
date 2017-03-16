@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <script src="../Referance/jquery/jquery-3.1.1.min.js"></script>
+    <title>Selectors</title>
+    <meta charset="utf-8" />
+
+    <script>
+
+        //The element Selector
+        $(document).ready(function () {
+            $('button').click(function () {
+                $('p').hide();
+            });
+        });
+
+        //The ID Selector
+        $(document).ready(function () {
+            $('button').click(function () {
+                $('#test').hide();
+            });
+        });
+
+    </script>
+
+</head>
+<body>
+    <h1>Selectors</h1>
+
+    <h2 id="test">This is a heading</h2>
+
+    <p>This is a paragraph.</p>
+    <p>This is another paragraph.</p>
+
+    <button>Click me to hide paragraphs</button>
+
+
+
+</body>
+</html>
